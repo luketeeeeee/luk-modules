@@ -1,0 +1,36 @@
+{
+  "name": "luk-modules",
+  "version": "0.1.0",
+  "description": "CLI for creating my personal modules structures",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "modules",
+    "components",
+    "javascript",
+    "node",
+    "react",
+    "express",
+    "frontend",
+    "backend",
+    "cli"
+  ],
+  "author": "lukete",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0"
+  }
+}
