@@ -1,6 +1,6 @@
 {
   "name": "luk-modules",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "CLI for creating my personal modules structures",
   "main": "./src/index.js",
   "type": "module",
