@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import color from 'picocolors';
 import * as clack from '@clack/prompts';
 import fs from 'fs';

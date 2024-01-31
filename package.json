@@ -1,6 +1,6 @@
 {
   "name": "luk-modules",
-  "version": "0.1.3",
+  "version": "0.1.6",
   "description": "CLI for creating my personal modules structures",
   "main": "./src/index.js",
   "type": "module",
@@ -8,7 +8,7 @@
     "dev": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": "./scr/index.js",
+  "bin": "./src/index.js",
   "keywords": [
     "modules",
     "components",
