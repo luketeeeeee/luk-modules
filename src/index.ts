@@ -65,6 +65,43 @@ const main = async () => {
   }
 
   if (projectType === 'backend') {
+    await fs.mkdir(`${moduleRoute.toString()}/${moduleName.toString()}`, (err) => {
+      if (err) throw err;
+    });
+
+    await fs.writeFile(
+      usingTypeScript
+        ? `${moduleRoute.toString()}/${moduleName.toString()}/${moduleName.toString()}.routes.ts`
+        : `${moduleRoute.toString()}/${moduleName.toString()}/${moduleName.toString()}.routes.js`,
+      '',
+      (err) => {
+        if (err) throw err;
+      }
+    );
+
+    await fs.writeFile(
+      usingTypeScript
+        ? `${moduleRoute.toString()}/${moduleName.toString()}/index.ts`
+        : `${moduleRoute.toString()}/${moduleName.toString()}/index.js`,
+      '',
+      (err) => {
+        if (err) throw err;
+      }
+    );
+
+    await fs.mkdir(
+      `${moduleRoute.toString()}/${moduleName.toString()}/controllers`,
+      (err) => {
+        if (err) throw err;
+      }
+    );
+
+    await fs.mkdir(
+      `${moduleRoute.toString()}/${moduleName.toString()}/services`,
+      (err) => {
+        if (err) throw err;
+      }
+    );
   }
 };
 
